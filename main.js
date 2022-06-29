@@ -1,12 +1,11 @@
 var http = require('http');
 var fs = require('fs');
 
-const port = 8080
+const port = 8000
 
 http.createServer(function (request, response) {
     console.log('request starting...');
 
-    // var filePath = './temp' + request.url;
     var filePath = './temp/chunks' + request.url;
 
     fs.readFile(filePath, function(error, content) {
