@@ -1,12 +1,12 @@
 {
   "name": "hls_demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "hls demo in nodejs",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["hls-demo", "hls-live-streaming", "hls-stream", "hls-server", "hls-audio", "hls-chunks-to-s3", "mp3-to-hls-chunks", "hls-node-js", "hls-demo-nodejs", "hls-example-nodejs"],
   "author": "Sandip Basnet",
   "license": "ISC",
   "dependencies": {
