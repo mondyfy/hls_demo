@@ -1,11 +1,13 @@
+require('dotenv').config()
+
 const aws = require('aws-sdk')
 const fs = require('fs');
 
-// Add your aws s3 bucket credentials
+// Add your aws s3 bucket credentials in env
 const s3Creds = {
-    accessKeyId: "",
-    secretAccessKey: "",
-    bucketName: "",
+    accessKeyId: process.env['AWS_S3.ACCESS_KEY_ID'],
+    secretAccessKey: process.env['AWS_S3.SECRET_ACCESS_KEY'],
+    bucketName: process.env['AWS_S3.BUCKET_NAME'],
 };
 
 const s3 = new aws.S3({
@@ -23,8 +25,8 @@ fs.readdir('temp/chunks', (err, files) => {
 
         const params = {
             Body: fs.createReadStream('temp/chunks/' + file),
-            Bucket: secretAccessKey.bucketName,
-            Key: `manish_pradhan/2022/05/04/01/${file}`,
+            Bucket: s3Creds.bucketName,
+            Key: `sandip_basnet/2022/06/30/11/${file}`,
             ACL: 'public-read',
         }
 

@@ -7,11 +7,23 @@
     "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["hls-demo", "hls-live-streaming", "hls-stream", "hls-server", "hls-audio", "hls-chunks-to-s3", "mp3-to-hls-chunks", "hls-node-js", "hls-demo-nodejs", "hls-example-nodejs"],
+  "keywords": [
+    "hls-demo",
+    "hls-live-streaming",
+    "hls-stream",
+    "hls-server",
+    "hls-audio",
+    "hls-chunks-to-s3",
+    "mp3-to-hls-chunks",
+    "hls-node-js",
+    "hls-demo-nodejs",
+    "hls-example-nodejs"
+  ],
   "author": "Sandip Basnet",
   "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1126.0",
+    "dotenv": "^16.0.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
   }
